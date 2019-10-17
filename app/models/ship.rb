@@ -8,6 +8,7 @@ class Ship
   @type = params["pirate"]["ships"][]["type"]
   @booty = params["pirate"]["ships"][]["booty"]
   @@all << self 
+end
   end 
    def self.all 
      @@all 
