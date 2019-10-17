@@ -5,7 +5,7 @@ class Pirate
     @name = params["pirate"]["name"]
     @weight = params["pirate"]["weight"]
     @height = params["pirate"]["height"]
-    binding.pry
+    
     @@all << self
    end
    
