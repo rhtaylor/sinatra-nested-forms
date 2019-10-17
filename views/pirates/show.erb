@@ -6,8 +6,11 @@
 <h1>Weight:<%= params["pirate"]["weight"] %>lbs</h1>
 <h1>Height:<%= params["pirate"]["height"] %></h1>
 <h2><%= @ship_one %></h2>
+<h2><% params["pirate"]["ships"].each do |x| %></h2>
+<h2><%= x["name"] %></h2>
+<h2><%= x["type"] %></h2> 
+<h2><%= x["booty"]%></h2>
+<h2><% end %></h2>
 
-
-<h2><%= @ship_two %></h2>
 </body>
 </html>
