@@ -4,9 +4,9 @@ class Ship
   def initialize(params)
     params["pirate"]["ships"].each do |x|
       binding.pry
-  @name = params["pirate"]["ships"][]["name"]
-  @type = params["pirate"]["ships"][]["type"]
-  @booty = params["pirate"]["ships"][]["booty"]
+  @name = x["name"]
+  @type = x["type"]
+  @booty = x["booty"]
   @@all << self 
 end
   end 
