@@ -3,12 +3,12 @@ class Ship
   attr_reader :name, :type, :boody
   def initialize(params)
     params["pirate"]["ships"].each do |x|
-      binding.pry
+      
   @name = x["name"]
   @type = x["type"]
   @booty = x["booty"]
   @@all << self 
-end
+  end
   end 
    def self.all 
      @@all 
