@@ -13,7 +13,7 @@ module FormsLab
        post '/pirates' do
         new_pirate = Pirate.new(params)
         new_ship = Ship.new(params)
-        binding.pry
+        
         @bas = params["pirate"]
         @pirate = params["pirate"]["name"]
         @ship_one = @bas["ships"][0]["name"]
